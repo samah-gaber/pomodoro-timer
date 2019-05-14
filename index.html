@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Messages -->
+  <div id="finalMsgCont">
+    <p id="finalMsg">Today, you have worked 00 miutes and 00 seconds. And you took a break for 00 minutes and 00 seconds. Good job !!</p>
+    <button id="finalBtn">OK</button>
+  </div>
+  <div id="workMsgCont">
+    <p id="workMsg">Work time is done !! Go HOME.</p>
+    <button id="goBackWorkBtn">Go back to work</button>
+    <button id="endWorkBtn">End work</button>
+  </div>
+  <div id="breakMsgCont">
+    <p id="breakMsg">Break time is done !! Go back to WORK.</p>
+    <button id="endBreak">Go back to work</button>
+  </div>
+  <!-- Pomodoro Body -->
+  <div class="bg-image"></div>
+  <div class="container">
+    <!-- Timer Section -->
+    <div id="timer">
+      <div id="work">
+        <span>Work</span>
+        <span id="workTimer">00 : 00</span>
+      </div>
+      <div id="break">
+        <span>Break</span>
+        <span id="breakTimer">00 : 00</span>
+      </div>
+    </div>
+    <!-- Buttons -->
+    <div id="buttons">
+      <button id="startWork">Start</button>
+      <button id="breakTime" disabled>Break</button>
+      <button id="resumeWork" disabled>Resume</button>
+      <button id="endWork" disabled>End</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>

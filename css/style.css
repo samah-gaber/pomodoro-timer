@@ -1,0 +1,93 @@
+/*-----General Layout-----*/
+*{
+	margin: 0;
+	padding: 0;
+}
+.bg-image {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(../images/original.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -200px;
+}
+/*-----Pomodoro Body-----*/
+.container {
+	position: absolute;
+	bottom: 20%;
+	left: 33%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+#timer {
+	border: 5px solid #61442f;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+	background-color: #dac2a64a;
+}
+#work span, #break span {
+	color: #61442f;
+	font-size: 30px;
+	font-weight: bold;
+}
+#work span:first-child, #break span:first-child{
+	margin-right: 10px;
+}
+#work {
+	margin-bottom: 20px;
+}
+/*-----Buttons-----*/
+#buttons {
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+}
+button {
+	background-color: #61442f;
+	padding: 15px 25px;
+	margin-right: 25px;
+	border-radius: 10px;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+button[disabled] {
+	background-color: #dac2a64a;
+}
+/*-----Meassages-----*/
+#workMsgCont, #breakMsgCont, #finalMsgCont{
+	display: none;
+	margin: 0 auto;
+	border-radius: 50px;
+	padding: 100px 20px 50px;
+	height: 350px;
+	background-color: #a29a82d9;
+	position: absolute;
+	z-index: 1;
+	top: 16%;
+	left: 32%;
+	width: 30%;
+	box-sizing: border-box;
+	text-align: center;
+}
+#workMsg, #breakMsg, #finalMsg{
+	color: white;
+	font-size: 28px;
+	font-family: sans-serif;
+	text-align: center;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+#workMsgCont button, #breakMsgCont button, #finalMsgCont button{
+	background-color: #625838d9;
+}
